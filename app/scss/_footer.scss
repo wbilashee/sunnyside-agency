@@ -1,0 +1,79 @@
+.footer {
+  text-align: center;
+  background: $lightcyan;
+  padding: 4rem 2.5rem;
+
+  @include breakpoint-up(large) {
+    padding: 4.75rem 0;
+  }
+
+  a {
+    color: $darkmoderatecyan;
+  }
+
+  &__logo {
+    width: 10.75rem;
+
+    @include breakpoint-up(large) {
+      width: 10rem;
+    }
+  }
+
+  &__links {
+    margin: 2.25rem auto 5rem;
+
+    a {
+      font-weight: 600;
+      font-size: 1.0625rem;
+      transition: $transition;
+
+      @include breakpoint-up(large) {
+        font-weight: 500;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3.25rem;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__social {
+    a {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+
+        @include breakpoint-up(large) {
+          margin-right: 1.35rem;
+        }
+      }
+
+      svg {
+        width: 1.375rem;
+
+        @include breakpoint-up(large) {
+          width: 1.3125rem;
+        }
+
+        path {
+          fill: $darkdesaturatedcyan;
+          transition: $transition;
+        }
+      }
+
+      &:hover {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 3.5rem;
+    color: $darkmoderatecyan;
+  }
+}

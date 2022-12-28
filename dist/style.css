@@ -519,4 +519,72 @@ h4 {
 }
 .gallery img {
   width: 100%;
+}
+
+.footer {
+  text-align: center;
+  background: hsl(168deg, 44%, 70%);
+  padding: 4rem 2.5rem;
+}
+@media (min-width: 64em) {
+  .footer {
+    padding: 4.75rem 0;
+  }
+}
+.footer a {
+  color: hsl(168deg, 34%, 41%);
+}
+.footer__logo {
+  width: 10.75rem;
+}
+@media (min-width: 64em) {
+  .footer__logo {
+    width: 10rem;
+  }
+}
+.footer__links {
+  margin: 2.25rem auto 5rem;
+}
+.footer__links a {
+  font-weight: 600;
+  font-size: 1.0625rem;
+  transition: all 300ms ease-in-out;
+}
+@media (min-width: 64em) {
+  .footer__links a {
+    font-weight: 500;
+  }
+}
+.footer__links a:not(:last-child) {
+  margin-right: 3.25rem;
+}
+.footer__links a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+@media (min-width: 64em) {
+  .footer__social a:not(:last-child) {
+    margin-right: 1.35rem;
+  }
+}
+.footer__social a svg {
+  width: 1.375rem;
+}
+@media (min-width: 64em) {
+  .footer__social a svg {
+    width: 1.3125rem;
+  }
+}
+.footer__social a svg path {
+  fill: hsl(167deg, 40%, 24%);
+  transition: all 300ms ease-in-out;
+}
+.footer__social a:hover path {
+  fill: hsl(0deg, 0%, 100%);
+}
+.footer .attribution {
+  margin-top: 3.5rem;
+  color: hsl(168deg, 34%, 41%);
 }/*# sourceMappingURL=style.css.map */
