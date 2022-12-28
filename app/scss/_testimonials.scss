@@ -1,0 +1,90 @@
+.testimonials {
+  padding: 4rem 0 5.75rem;
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    padding: 10rem 0;
+  }
+
+  h2 {
+    font-size: 1.0625rem;
+    margin-bottom: 3.75rem;
+    color: $darkgrayishblue;
+    text-shadow: $textShadow;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+
+    @include breakpoint-up(large) {
+      font-size: $fontSize;
+      margin-bottom: 4.5rem;
+      letter-spacing: 0.375rem;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 65rem;
+    grid-template-columns: 1fr;
+    gap: 4.5rem 2rem;
+
+    @include breakpoint-up(large) {
+      padding: 0;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .testimonial__card {
+    img {
+      width: 4.5rem;
+      border-radius: 50%;
+
+      @include breakpoint-up(large) {
+        width: 4.25rem;
+      }
+
+      + p {
+        margin: 1.5rem 0;
+        font-weight: 500;
+        line-height: 1.75;
+        font-size: $fontSize;
+        text-shadow: $textShadow;
+        color: $verydarkgrayishblue;
+
+        @include breakpoint-up(large) {
+          margin: 3rem 0;
+          font-size: 1.0625rem;
+        }
+      }
+    }
+
+    .user__info {
+      margin-top: 2rem;
+
+      @include breakpoint-up(large) {
+        margin-top: 4.25rem;
+      }
+
+      h4 {
+        font-weight: 900;
+        font-size: $fontSize;
+        color: $verydarkdesaturatedblue;
+
+        @include breakpoint-up(large) {
+          font-size: 1.0625rem;
+        }
+      }
+
+      p {
+        color: $grayishblue;
+        margin: 0.75rem 0 0;
+        font-size: 0.875rem;
+        text-shadow: $textShadow;
+
+        @include breakpoint-up(large) {
+          font-size: 0.8125rem;
+        }
+      }
+    }
+  }
+}
