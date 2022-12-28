@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   font-family: $barlow;
 
   &.noscroll {
@@ -28,6 +27,36 @@ h1,
 h2,
 h3 {
   font-family: $fraunces;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-ji-c {
+    justify-items: center;
+  }
 }
 
 // Visibility
