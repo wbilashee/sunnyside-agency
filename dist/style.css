@@ -504,4 +504,19 @@ h4 {
   .testimonials .testimonial__card .user__info p {
     font-size: 0.8125rem;
   }
+}
+
+.gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 64em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.gallery picture {
+  line-height: 0;
+}
+.gallery img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
